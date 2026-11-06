@@ -1,0 +1,1 @@
+"""Private Tesseract implementation details."""

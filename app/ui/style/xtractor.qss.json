@@ -1,0 +1,59 @@
+{
+  "colors": {
+    "bg": "#1f1f1f",
+    "surface": "#242424",
+    "surface_alt": "#2b2b2b",
+    "surface_soft": "#2f2f2f",
+    "text": "#e6e6e6",
+    "text_muted": "#b9b9b9",
+    "border": "#3a3a3a",
+    "accent": "#c2181f",
+    "accent_hover": "#a5161b",
+    "accent_soft": "#ff6b6b",
+    "danger_surface": "#2d2022",
+    "success_surface": "#183d2a",
+    "warning_surface": "#4a3515",
+    "error_surface": "#5a2024",
+    "success": "#69d391",
+    "danger": "#ff7b82",
+    "information": "#8ab4f8",
+    "information_surface": "#1f334f",
+    "pill_identity_surface": "rgba(43, 43, 43, 180)",
+    "pill_status_surface": "rgba(43, 43, 43, 125)",
+    "tab_inactive": "#2b2b2b"
+  },
+  "spacing": {
+    "xs": 4,
+    "sm": 6,
+    "md": 8,
+    "lg": 12,
+    "xl": 16,
+    "xxl": 20
+  },
+  "font": {
+    "size_sm": 10,
+    "size_base": 11,
+    "size_lg": 12,
+    "size_xl": 14
+  },
+  "radii": {
+    "sm": 6,
+    "md": 10,
+    "lg": 14,
+    "pill": 18
+  },
+  "sizes": {
+    "ocr_mode_button_height": 43,
+    "button_height": 24,
+    "input_height": 24,
+    "tab_height": 24,
+    "scrollbar": 12,
+    "table_row": 22
+  },
+  "shadow": {
+    "blur": 20,
+    "offset_x": 0,
+    "offset_y": 6,
+    "color": "rgba(0, 0, 0, 120)"
+  }
+}

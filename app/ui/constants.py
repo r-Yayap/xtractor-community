@@ -1,0 +1,9 @@
+from app.version import __version__
+
+VERSION_TEXT = __version__
+
+CURRENT_ZOOM = 2.0
+SIDEBAR_WIDTH = 380
+SIDEBAR_WIDTH_MAX = 520
+SCROLL_MARGIN = 20
+SCROLL_INCREMENT_THRESHOLD = 3

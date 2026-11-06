@@ -1,0 +1,946 @@
+QFrame#WindowChrome {
+    background-color: {colors[bg]};
+    border: 1px solid {colors[border]};
+    border-radius: {radii[lg]}px;
+}
+
+QFrame#WindowChrome[windowState="maximized"] {
+    border-radius: 0px;
+}
+
+QWidget#WindowHeader {
+    background-color: transparent;
+    border: none;
+    border-top-left-radius: {radii[lg]}px;
+    border-top-right-radius: {radii[lg]}px;
+}
+
+QWidget#WindowHeader[windowState="maximized"] {
+    border-radius: 0px;
+}
+
+QWidget#WindowBody {
+    background-color: {colors[bg]};
+    border: none;
+    border-bottom-left-radius: {radii[lg]}px;
+    border-bottom-right-radius: {radii[lg]}px;
+}
+
+QWidget#WindowBody[windowState="maximized"] {
+    border-radius: 0px;
+}
+
+QWidget#WindowDragArea,
+QWidget#WindowControls,
+QLabel#WindowLogo {
+    background-color: transparent;
+    border: none;
+}
+
+QWidget#WindowResizeHandle {
+    background-color: transparent;
+    border: none;
+}
+
+QLabel#WindowTitle {
+    background-color: transparent;
+    color: {colors[accent]};
+    font-size: {font[size_xl]}px;
+    font-weight: {font[weight_semibold]};
+}
+
+QToolButton#TitleHelpButton,
+QToolButton#TitleMinButton,
+QToolButton#TitleMaxButton,
+QToolButton#TitleCloseButton {
+    background-color: transparent;
+    border: none;
+    border-radius: 0px;
+    padding: 0px;
+}
+
+QToolButton#TitleHelpButton[titleState="hover"],
+QToolButton#TitleMinButton[titleState="hover"],
+QToolButton#TitleMaxButton[titleState="hover"] {
+    background-color: {colors[surface_soft]};
+}
+
+QToolButton#TitleHelpButton[titleState="pressed"],
+QToolButton#TitleMinButton[titleState="pressed"],
+QToolButton#TitleMaxButton[titleState="pressed"] {
+    background-color: {colors[surface]};
+}
+
+QToolButton#TitleCloseButton[titleState="hover"] {
+    background-color: {colors[accent]};
+}
+
+QToolButton#TitleCloseButton[titleState="pressed"] {
+    background-color: {colors[accent_hover]};
+}
+
+QToolButton#TitleHelpButton {
+    color: {colors[accent]};
+    font-size: {font[size_lg]}px;
+    font-weight: {font[weight_semibold]};
+}
+
+QToolButton#TitleHelpButton[titleState="hover"] {
+    color: {colors[text]};
+    border-radius: {radii[sm]}px;
+}
+
+QWidget {
+    background-color: {colors[bg]};
+    color: {colors[text]};
+    font-family: "{font[family]}";
+    font-size: {font[size_base]}px;
+}
+
+QLabel {
+    background-color: transparent;
+}
+
+QMainWindow {
+    background-color: transparent;
+}
+
+QLabel#subtitleText {
+    color: {colors[text_muted]};
+    font-size: {font[size_sm]}px;
+}
+
+QLabel#titleText {
+    font-size: {font[size_lg]}px;
+    font-weight: {font[weight_semibold]};
+}
+
+QLabel#dropFolderIcon {
+    font-size: {font[size_xl]}px;
+}
+
+QLabel#dropFolderTitle {
+    font-size: {font[size_lg]}px;
+    font-weight: {font[weight_semibold]};
+}
+
+QLabel#dropFolderSubtitle {
+    color: {colors[text_muted]};
+    font-size: {font[size_sm]}px;
+}
+
+QLabel#emptyOverlay {
+    color: {colors[text_muted]};
+    font-size: {font[size_sm]}px;
+}
+
+QPushButton {
+    background-color: {colors[surface_alt]};
+    color: {colors[text]};
+    border: 1px solid {colors[border]};
+    border-radius: {radii[sm]}px;
+    padding: {spacing[sm]}px {spacing[lg]}px;
+    min-height: {sizes[button_height]}px;
+}
+
+QPushButton:hover {
+    border-color: {colors[accent]};
+    background-color: {colors[surface_soft]};
+}
+
+QPushButton:pressed {
+    background-color: {colors[accent_hover]};
+    border-color: {colors[accent_hover]};
+}
+
+QPushButton:disabled {
+    color: {colors[text_muted]};
+    background-color: {colors[surface]};
+    border-color: {colors[border]};
+}
+
+QToolButton#moreConfigsToggle {
+    background-color: transparent;
+    border: none;
+    padding: 0px 0px 0px 14px;
+    color: {colors[text_muted]};
+}
+
+QToolButton#areaManagementToggle {
+    background-color: transparent;
+    border: none;
+    padding: 0px 0px 0px 14px;
+    color: {colors[text_muted]};
+}
+
+QToolButton#moreConfigsToggle:hover {
+    background-color: transparent;
+    color: {colors[accent]};
+}
+
+QToolButton#areaManagementToggle:hover {
+    background-color: transparent;
+    color: {colors[accent]};
+}
+
+QToolButton#moreConfigsToggle:pressed {
+    background-color: transparent;
+    color: {colors[accent_soft]};
+}
+
+QToolButton#areaManagementToggle:pressed {
+    background-color: transparent;
+    color: {colors[accent_soft]};
+}
+
+QFrame#areaManagementPanel {
+    background-color: {colors[surface]};
+    border: 1px solid {colors[border]};
+    border-radius: {radii[sm]}px;
+}
+
+QFrame#areaManagementPanel QLabel {
+    background-color: transparent;
+}
+
+QLabel#areaManagementSectionLabel {
+    color: {colors[text_muted]};
+    font-size: {font[size_sm]}px;
+    font-weight: {font[weight_semibold]};
+    padding-top: {spacing[xs]}px;
+}
+
+QFrame#areaRemovalPanel {
+    background-color: {colors[danger_surface]};
+    border: 1px solid {colors[accent_hover]};
+    border-radius: {radii[sm]}px;
+}
+
+QLabel#areaRemovalSectionLabel {
+    color: {colors[accent_soft]};
+    font-weight: {font[weight_semibold]};
+}
+
+QLabel#areaRemovalHint {
+    color: {colors[text_muted]};
+    font-size: {font[size_sm]}px;
+}
+
+QWidget#viewerControls {
+    background-color: transparent;
+}
+
+
+QPushButton#viewerControlButton {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: {colors[text]};
+    font-size: {font[size_lg]}px;
+    font-weight: {font[weight_semibold]};
+    min-width: 28px;
+    min-height: 28px;
+    padding: 0px;
+}
+
+QPushButton#viewerCloseButton {
+    background-color: transparent;
+    border: 1px solid {colors[accent]};
+    color: {colors[accent]};
+    font-size: {font[size_sm]}px;
+    font-weight: {font[weight_semibold]};
+    min-width: 22px;
+    min-height: 22px;
+    max-width: 22px;
+    max-height: 22px;
+    padding: 0px;
+    border-radius: 11px;
+    text-align: center;
+}
+
+QPushButton#viewerCloseButton:hover {
+    border-color: {colors[accent_soft]};
+    color: {colors[accent_soft]};
+}
+
+QPushButton#viewerControlButton:hover {
+    color: {colors[accent]};
+}
+
+QPushButton#viewerControlButton:pressed {
+    color: {colors[accent_soft]};
+}
+
+QLabel#viewerZoomIcon {
+    color: {colors[text]};
+    font-size: {font[size_lg]}px;
+    font-weight: {font[weight_semibold]};
+}
+
+QFrame#viewerZoomBar QWidget#viewerPageNavigator {
+    background-color: transparent;
+    border: none;
+}
+
+QFrame#viewerZoomBar QPushButton#viewerPagePreviousButton,
+QFrame#viewerZoomBar QPushButton#viewerPageNextButton {
+    min-width: 22px;
+    max-width: 22px;
+    min-height: 22px;
+    max-height: 22px;
+    padding: 0px;
+    border: none;
+    border-radius: 11px;
+    background-color: transparent;
+    color: {colors[text]};
+    font-size: {font[size_lg]}px;
+    font-weight: {font[weight_semibold]};
+}
+
+QFrame#viewerZoomBar QPushButton#viewerPagePreviousButton:hover,
+QFrame#viewerZoomBar QPushButton#viewerPageNextButton:hover {
+    background-color: {colors[surface_soft]};
+    color: {colors[accent_soft]};
+}
+
+QFrame#viewerZoomBar QPushButton#viewerPagePreviousButton:disabled,
+QFrame#viewerZoomBar QPushButton#viewerPageNextButton:disabled {
+    background-color: transparent;
+    color: {colors[text_muted]};
+}
+
+QFrame#viewerZoomBar QSpinBox#viewerPageInput {
+    min-width: 46px;
+    max-width: 46px;
+    min-height: 22px;
+    max-height: 22px;
+    padding: 0px 4px;
+    border: 1px solid {colors[border]};
+    border-radius: {radii[sm]}px;
+    background-color: {colors[surface]};
+    color: {colors[text]};
+    selection-background-color: {colors[accent]};
+}
+
+QFrame#viewerZoomBar QSpinBox#viewerPageInput:focus {
+    border-color: {colors[accent]};
+}
+
+QFrame#viewerZoomBar QLabel#viewerPageDividerLabel,
+QFrame#viewerZoomBar QLabel#viewerPageTotalLabel {
+    background-color: transparent;
+    color: {colors[text_muted]};
+    font-size: {font[size_sm]}px;
+}
+
+QFrame#viewerZoomBar QFrame#viewerPageNavigatorSeparator {
+    background-color: {colors[border]};
+    border: none;
+}
+
+/* Slider should not “paint a box” that overwrites the pill corners */
+QSlider#viewerZoomSlider {
+    background: transparent;
+    border: none;
+    min-height: 14px;
+}
+
+/* Make the groove not fill the pill corners */
+QSlider#viewerZoomSlider::groove:horizontal {
+    height: 8px;
+    background: transparent;   /* IMPORTANT */
+    margin: 0 14px;            /* IMPORTANT: keep away from rounded ends */
+}
+
+/* Track parts (still inset because groove is inset) */
+QSlider#viewerZoomSlider::sub-page:horizontal,
+QSlider#viewerZoomSlider::add-page:horizontal {
+    background-color: {colors[surface_alt]};
+    border-radius: 999px;
+}
+
+QSlider#viewerZoomSlider::handle:horizontal {
+    background-color: {colors[accent]};
+    border: 1px solid {colors[accent]};
+    width: 14px;
+    height: 14px;
+    margin: -4px 0;
+    border-radius: 999px;
+}
+QSlider#viewerZoomSlider::handle:horizontal:hover {
+    background-color: {colors[accent_hover]};
+}
+
+QPushButton[variant="primary"] {
+    background-color: {colors[accent]};
+    border-color: {colors[accent]};
+    color: #ffffff;
+    font-weight: {font[weight_semibold]};
+}
+
+QPushButton[variant="primary"]:hover {
+    background-color: {colors[accent_soft]};
+    border-color: {colors[accent_soft]};
+}
+
+QPushButton[variant="primary"]:disabled {
+    color: {colors[text_muted]};
+    background-color: {colors[surface]};
+    border-color: {colors[border]};
+}
+
+QPushButton[areaAction="clear"] {
+    color: {colors[accent_soft]};
+    background-color: {colors[surface]};
+    border-color: {colors[accent_hover]};
+    padding-left: {spacing[sm]}px;
+    padding-right: {spacing[sm]}px;
+}
+
+QPushButton[areaAction="clear"]:hover {
+    color: #ffffff;
+    background-color: {colors[accent_hover]};
+    border-color: {colors[accent_soft]};
+}
+
+QPushButton[areaAction="clear"][destructiveLevel="high"] {
+    color: #ffffff;
+    background-color: {colors[accent]};
+    border-color: {colors[accent]};
+    font-weight: {font[weight_semibold]};
+}
+
+QPushButton[areaAction="clear"][destructiveLevel="high"]:hover {
+    background-color: {colors[accent_hover]};
+    border-color: {colors[accent_soft]};
+}
+
+
+
+/* Selected state ONLY for OCR Mode buttons */
+QGroupBox#ocrModeGroup QPushButton[modeToggle="true"][modeSelected="true"] {
+    background-color: {colors[accent]};
+    border-color: {colors[accent]};
+    color: #ffffff;
+
+    font-size: {font[size_xl]}px;
+    font-weight: 700;
+}
+
+
+QPushButton[modeActive="true"][modeType="area"] {
+    background-color: {colors[mode_area]};
+    border-color: {colors[mode_area]};
+    color: #ffffff;
+}
+
+QPushButton[modeActive="true"][modeType="resize"] {
+    background-color: {colors[mode_resize]};
+    border-color: {colors[mode_resize]};
+    color: #ffffff;
+}
+
+
+QLineEdit, QTextEdit, QPlainTextEdit {
+    background-color: {colors[surface_alt]};
+    border: 1px solid {colors[border]};
+    border-radius: {radii[sm]}px;
+    padding: {spacing[sm]}px;
+    min-height: {sizes[input_height]}px;
+    selection-background-color: {colors[selection]};
+}
+
+QLineEdit:focus, QTextEdit:focus, QPlainTextEdit:focus {
+    border-color: {colors[accent]};
+}
+
+QComboBox {
+    padding-right: 28px; /* make room for the arrow */
+    background-color: {colors[surface_alt]};
+    border: 1px solid {colors[border]};
+    border-radius: {radii[sm]}px;
+    padding: {spacing[sm]}px {spacing[lg]}px {spacing[sm]}px {spacing[sm]}px;
+    min-height: {sizes[input_height]}px;
+}
+
+QComboBox:hover {
+    border-color: {colors[accent]};
+}
+
+QComboBox[variant="accent"] {
+    background-color: {colors[accent]};
+    border-color: {colors[accent]};
+    color: #ffffff;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+QComboBox[variant="accent"]:hover {
+    border-color: {colors[accent_soft]};
+}
+
+QComboBox[variant="accent"] QLineEdit {
+    background: transparent;
+    color: #ffffff;
+    border: none;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+QComboBox[variant="compact"] {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+QComboBox[variant="compact"] QLineEdit {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+/* ComboBox container (keep your existing QComboBox block as-is) */
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 28px;
+
+    /* IMPORTANT: make the right side match the combo background */
+    background-color: {colors[surface_alt]};
+
+    /* IMPORTANT: remove square look */
+    border: none;
+    border-left: 1px solid {colors[border]};
+    border-top-right-radius: {radii[sm]}px;
+    border-bottom-right-radius: {radii[sm]}px;
+}
+
+QComboBox::drop-down:hover {
+    background-color: {colors[surface_soft]};
+}
+
+QComboBox[variant="accent"]::drop-down {
+    background-color: {colors[accent]};
+    border-left: 1px solid {colors[accent]};
+}
+
+QComboBox[variant="accent"]::drop-down:hover {
+    background-color: {colors[accent_soft]};
+}
+
+QComboBox::down-arrow {
+    image: url("{paths[icons]}/chevron-down.svg");
+    width: 8px;
+    height: 8px;
+}
+
+QToolButton::right-arrow {
+    image: url("{paths[icons]}/chevron-right.svg");
+    width: 9px;
+    height: 9px;
+    subcontrol-origin: padding;
+    subcontrol-position: center left;
+}
+
+QToolButton::down-arrow {
+    image: url("{paths[icons]}/chevron-down.svg");
+    width: 9px;
+    height: 9px;
+    subcontrol-origin: padding;
+    subcontrol-position: center left;
+}
+
+
+
+QComboBox QAbstractItemView {
+    background-color: {colors[surface]};
+    border: 1px solid {colors[border]};
+    selection-background-color: {colors[accent]};
+    selection-color: #ffffff;
+}
+
+QTabWidget::pane {
+    border: 1px solid {colors[border]};
+    border-radius: {radii[md]}px;
+    margin: 0px;
+    padding: 0px;
+}
+
+QTabBar {
+    qproperty-expanding: 1;
+}
+
+QTabBar::tab {
+    background-color: {colors[tab_inactive]};
+    color: {colors[text]};
+    padding: 0px;
+    min-height: {sizes[tab_height]}px;
+    min-width: {sizes[tab_height]}px;
+    text-align: center;
+    border-top-left-radius: {radii[md]}px;
+    border-top-right-radius: {radii[md]}px;
+    border: 1px solid {colors[border]};
+    margin-right: 0px;
+}
+
+QTabBar::tab:selected {
+    background-color: {colors[tab_active]};
+    color: #ffffff;
+    border-color: {colors[tab_active]};
+}
+
+QTabBar::tab:hover {
+    border-color: {colors[accent]};
+}
+
+QGroupBox {
+    border: 1px solid {colors[border]};
+    border-radius: {radii[md]}px;
+    margin-top: {spacing[lg]}px;
+    padding: {spacing[lg]}px {spacing[lg]}px {spacing[md]}px {spacing[lg]}px;
+    background-color: {colors[surface]};
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 {spacing[sm]}px;
+    color: {colors[text]};
+    font-weight: {font[weight_semibold]};
+}
+
+QFrame#dropFolderCard {
+    border: 2px dashed {colors[accent]};
+    border-radius: {radii[lg]}px;
+    background-color: {colors[surface]};
+}
+
+QFrame#dropFolderCard QLabel {
+    color: {colors[text]};
+    background-color: transparent;
+}
+
+QFrame#dropFolderCard QWidget {
+    background-color: transparent;
+}
+
+QFrame#dropFolderCard[hovering="true"] {
+    border-color: {colors[accent_soft]};
+    background-color: {colors[surface_soft]};
+}
+
+QFrame#dropFolderCard[dragActive="true"] {
+    border-style: solid;
+    border-color: {colors[accent_soft]};
+    background-color: {colors[surface_alt]};
+}
+
+QFrame#filesDropOverlay {
+    background-color: rgba(255, 255, 255, 20);
+    border: 2px dashed {colors[accent_soft]};
+    border-radius: {radii[md]}px;
+}
+
+QFrame#filesDropOverlay[dragActive="true"] {
+    background-color: {colors[surface_soft]};
+}
+
+/* Temporary in-place guidance target from the readiness panel. */
+QFrame#dropFolderCard[readinessTarget="true"],
+QFrame#filesDropOverlay[readinessTarget="true"],
+QFrame#areaManagementPanel[readinessTarget="true"],
+QTreeWidget[readinessTarget="true"],
+QLineEdit[readinessTarget="true"],
+QComboBox[readinessTarget="true"],
+QToolButton[readinessTarget="true"],
+QPushButton[readinessTarget="true"] {
+    border: 2px solid {colors[warning]};
+    background-color: {colors[warning_surface]};
+}
+
+QLabel#readinessGuidanceLabel {
+    color: {colors[text]};
+    background-color: {colors[warning_surface]};
+    border: 1px solid {colors[warning]};
+    border-radius: {radii[sm]}px;
+    padding: {spacing[xs]}px {spacing[sm]}px;
+    font-weight: {font[weight_semibold]};
+}
+
+QLabel#filesDropOverlayLabel {
+    color: {colors[text]};
+    font-weight: {font[weight_semibold]};
+    background-color: transparent;
+}
+
+QFrame#pdfScanStatusPanel {
+    background-color: {colors[surface_alt]};
+    border: 1px solid {colors[accent]};
+    border-radius: {radii[md]}px;
+    padding: {spacing[md]}px;
+}
+
+QFrame#pdfScanStatusPanel[scanState="cancelled"] {
+    border-color: {colors[warning]};
+}
+
+QFrame#pdfScanStatusPanel[scanState="incomplete"] {
+    border-color: {colors[warning]};
+}
+
+QFrame#pdfScanStatusPanel[scanState="failed"] {
+    border-color: {colors[accent_soft]};
+}
+
+QLabel#pdfScanStatusHeadline {
+    color: {colors[text]};
+    font-size: {font[size_lg]}px;
+    font-weight: {font[weight_semibold]};
+}
+
+QLabel#pdfScanStatusSummary {
+    color: {colors[text]};
+}
+
+QLabel#pdfScanStatusDetail {
+    color: {colors[text_muted]};
+    font-size: {font[size_sm]}px;
+}
+
+QPushButton#pdfScanCancelButton {
+    min-height: 0;
+    padding: {spacing[xs]}px {spacing[md]}px;
+}
+
+/* Readiness and review presentation */
+QFrame#readinessStatusHeader[readinessState="ready"],
+QFrame#readinessCallout[readinessState="ready"] {
+    background-color: {colors[success_surface]};
+    border-color: {colors[success]};
+}
+
+QFrame#readinessStatusHeader[readinessState="warning"],
+QFrame#readinessCallout[readinessState="warning"] {
+    background-color: {colors[warning_surface]};
+    border-color: {colors[warning]};
+}
+
+QFrame#readinessStatusHeader[readinessState="blocked"],
+QFrame#readinessCallout[readinessState="blocked"] {
+    background-color: {colors[danger_surface]};
+    border-color: {colors[danger]};
+}
+
+QFrame#readinessStatusHeader[readinessState="checking"],
+QFrame#readinessCallout[readinessState="checking"] {
+    background-color: {colors[information_surface]};
+    border-color: {colors[information]};
+}
+
+QFrame#jobReadinessCard {
+    background-color: {colors[surface_soft]};
+    border: 1px solid {colors[border]};
+    border-radius: {radii[md]}px;
+}
+
+QFrame#jobReadinessCard[readinessState="ready"] {
+    background-color: {colors[success_surface]};
+    border-color: {colors[success]};
+}
+
+QFrame#jobReadinessCard[readinessState="warning"] {
+    background-color: {colors[warning_surface]};
+    border-color: {colors[warning]};
+}
+
+QFrame#jobReadinessCard[readinessState="blocked"] {
+    background-color: {colors[danger_surface]};
+    border-color: {colors[danger]};
+}
+
+QFrame#jobReadinessCard[readinessState="checking"] {
+    background-color: {colors[information_surface]};
+    border-color: {colors[information]};
+}
+
+QFrame#jobReadinessCard[actionable="true"]:hover,
+QFrame#jobReadinessCard[actionable="true"]:focus {
+    border-color: {colors[accent_soft]};
+}
+
+QFrame#jobReadinessCard QFrame#readinessStatusHeader {
+    background-color: transparent;
+    border: none;
+}
+
+QLabel[readinessRole="icon"][readinessState="ready"],
+QLabel[readinessRole="rowValue"][readinessState="ready"] { color: {colors[success]}; }
+QLabel[readinessRole="icon"][readinessState="warning"],
+QLabel[readinessRole="rowValue"][readinessState="warning"] { color: {colors[warning]}; }
+QLabel[readinessRole="icon"][readinessState="blocked"],
+QLabel[readinessRole="rowValue"][readinessState="blocked"] { color: {colors[danger]}; }
+QLabel[readinessRole="icon"][readinessState="checking"],
+QLabel[readinessRole="rowValue"][readinessState="checking"] { color: {colors[information]}; }
+QLabel[readinessRole="icon"][readinessState="not_applicable"],
+QLabel[readinessRole="rowValue"][readinessState="not_applicable"] { color: {colors[text_muted]}; }
+
+QTreeWidget, QTableWidget {
+    background-color: {colors[surface]};
+    border: 1px solid {colors[border]};
+    border-radius: {radii[sm]}px;
+    padding: {spacing[xs]}px;
+    alternate-background-color: {colors[surface_alt]};
+}
+
+QHeaderView::section {
+    background-color: {colors[surface_alt]};
+    color: {colors[text]};
+    padding: {spacing[sm]}px;
+    border: 1px solid {colors[border]};
+}
+
+QTableWidget::item {
+    padding: {spacing[xs]}px;
+}
+
+QProgressBar {
+    background-color: {colors[surface_alt]};
+    border: 1px solid {colors[border]};
+    border-radius: {radii[pill]}px;
+    height: {sizes[button_height]}px;
+    text-align: center;
+}
+
+QProgressBar::chunk {
+    background-color: {colors[accent]};
+    border-radius: {radii[pill]}px;
+}
+
+QSlider::groove:horizontal {
+    height: 6px;
+    background-color: {colors[surface_alt]};
+    border-radius: {radii[pill]}px;
+}
+
+QSlider::handle:horizontal {
+    background-color: {colors[accent]};
+    border: 1px solid {colors[accent]};
+    width: 14px;
+    margin: -4px 0;
+    border-radius: {radii[pill]}px;
+}
+
+
+
+
+
+QScrollBar:vertical {
+    background: {colors[surface_alt]};
+    width: {sizes[scrollbar]}px;
+    margin: {spacing[xs]}px;
+    border-radius: {radii[pill]}px;
+}
+
+QScrollBar::handle:vertical {
+    background: {colors[accent]};
+    min-height: 28px;
+    border-radius: {radii[pill]}px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: {colors[accent_hover]};
+}
+
+QScrollBar::handle:vertical:pressed {
+    background: {colors[accent_soft]};
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0px;
+    width: 0px;
+}
+
+QScrollBar:horizontal {
+    background: {colors[surface_alt]};
+    height: {sizes[scrollbar]}px;
+    margin: {spacing[xs]}px;
+    border-radius: {radii[pill]}px;
+}
+
+QScrollBar::handle:horizontal {
+    background: {colors[accent]};
+    min-width: 28px;
+    border-radius: {radii[pill]}px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: {colors[accent_hover]};
+}
+
+QScrollBar::handle:horizontal:pressed {
+    background: {colors[accent_soft]};
+}
+
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal {
+    height: 0px;
+    width: 0px;
+}
+
+QMenu {
+    background-color: {colors[surface]};
+    border: 1px solid {colors[border]};
+}
+
+QMenu::item:selected {
+    background-color: {colors[accent]};
+    color: #ffffff;
+}
+
+QToolTip {
+    background-color: {colors[surface_alt]};
+    color: {colors[text]};
+    border: 1px solid {colors[border]};
+    padding: {spacing[sm]}px;
+    border-radius: {radii[sm]}px;
+}
+/* ===== Viewer Zoom Slider (FINAL OVERRIDE) ===== */
+/* ===== Viewer Zoom Slider (FINAL - keep only this block) ===== */
+
+QSlider#viewerZoomSlider {
+    background: transparent;
+    border: none;
+    min-height: 18px;
+}
+
+/* Track (line) */
+QSlider#viewerZoomSlider::groove:horizontal {
+    height: 6px;
+    margin: 0 14px;                 /* keeps away from pill ends */
+    background-color: {colors[border]};
+    border-radius: 3px;
+}
+
+/* Filled (left side) */
+QSlider#viewerZoomSlider::sub-page:horizontal {
+    background-color: {colors[accent]};
+    border-radius: 3px;
+}
+
+/* Unfilled (right side) */
+QSlider#viewerZoomSlider::add-page:horizontal {
+    background-color: {colors[surface_alt]};
+    border-radius: 3px;
+}
+
+/* Handle */
+QSlider#viewerZoomSlider::handle:horizontal {
+    width: 14px;
+    height: 14px;
+    margin: -4px 0;                 /* centers circle on the 6px line */
+    background-color: {colors[accent]};
+    border: 1px solid {colors[accent]};
+    border-radius: 7px;
+}
+
+QSlider#viewerZoomSlider::handle:horizontal:hover {
+    background-color: {colors[accent_hover]};
+    border-color: {colors[accent_hover]};
+}
